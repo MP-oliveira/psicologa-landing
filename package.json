@@ -2,6 +2,9 @@
   "name": "psicologa-landing",
   "version": "1.0.0",
   "description": "Landing Page - Psicóloga Paula Aranchipe",
+  "engines": {
+    "node": ">=18.17.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
