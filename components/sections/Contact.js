@@ -172,7 +172,7 @@ export default function Contact() {
               <div className={styles.social}>
                 <p>Me siga nas redes sociais:</p>
                 <div className={styles.socialLinks}>
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.instagram.com/paulaaranchipe.psi/" target="_blank" rel="noopener noreferrer">
                     <FaInstagram />
                   </a>
                   <a href="https://wa.me/5571981366264" target="_blank" rel="noopener noreferrer">
