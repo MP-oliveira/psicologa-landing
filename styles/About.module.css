@@ -1,0 +1,292 @@
+.about {
+  padding: 100px 0;
+  background: linear-gradient(to bottom, var(--secondary-color), #ffffff);
+  position: relative;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.header h2 {
+  font-size: 3.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.divider {
+  width: 100px;
+  height: 4px;
+  background: var(--gradient);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.introContainer {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 5rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.introImage {
+  position: relative;
+}
+
+.imageFrame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3/4;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(74, 124, 126, 0.3);
+  border: 5px solid white;
+}
+
+.photoPlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #f5f5f0 0%, #e8e8e0 50%, #f5f5f0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.photoPlaceholder::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 30% 40%, rgba(74, 124, 126, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 70% 60%, rgba(107, 159, 161, 0.15) 0%, transparent 50%);
+}
+
+.introImage:hover .photoPlaceholder {
+  transform: scale(1.05);
+}
+
+.photoOverlay {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photoContent {
+  text-align: center;
+}
+
+.photoBorder {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 1.5rem;
+  border: 4px solid var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 40px rgba(74, 124, 126, 0.3);
+}
+
+.photoInitials {
+  font-size: 5rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.photoHint {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.frameDecoration {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 150px;
+  height: 150px;
+  border: 3px solid var(--accent-color);
+  border-radius: 50%;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.intro {
+  text-align: left;
+}
+
+.mainText {
+  font-size: 1.3rem;
+  line-height: 1.9;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.secondaryText {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #5a6c6d;
+  font-weight: 300;
+}
+
+.specialtiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.specialtyCard {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.4s ease;
+  border: 1px solid rgba(74, 124, 126, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.specialtyCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--gradient);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.specialtyCard:hover::before {
+  transform: scaleX(1);
+}
+
+.specialtyCard:hover {
+  box-shadow: 0 15px 50px rgba(74, 124, 126, 0.2);
+  border-color: var(--primary-color);
+}
+
+.iconWrapper {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  background: var(--gradient);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.specialtyCard:hover .iconWrapper {
+  transform: rotate(360deg) scale(1.1);
+}
+
+.specialtyCard h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.specialtyCard p {
+  font-size: 1.05rem;
+  color: #5a6c6d;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .introContainer {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .imageFrame {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .intro {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 0;
+  }
+
+  .header h2 {
+    font-size: 2.5rem;
+  }
+
+  .imageFrame {
+    max-width: 280px;
+  }
+
+  .photoBorder {
+    width: 140px;
+    height: 140px;
+  }
+
+  .photoInitials {
+    font-size: 3.5rem;
+  }
+
+  .photoHint {
+    font-size: 1rem;
+  }
+
+  .frameDecoration {
+    width: 100px;
+    height: 100px;
+    top: -15px;
+    right: -15px;
+  }
+
+  .mainText {
+    font-size: 1.1rem;
+  }
+
+  .secondaryText {
+    font-size: 1rem;
+  }
+
+  .specialtiesGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .specialtyCard {
+    padding: 2.5rem 1.5rem;
+  }
+}
+
