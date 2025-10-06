@@ -56,7 +56,7 @@ export default function Hero() {
             Agendar Consulta
           </a>
           <a 
-            href="https://wa.me/5571999999999" 
+            href="https://wa.me/5571981366264" 
             target="_blank" 
             rel="noopener noreferrer"
             className={styles.btnWhatsapp}

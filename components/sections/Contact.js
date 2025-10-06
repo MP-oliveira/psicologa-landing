@@ -26,22 +26,23 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const whatsappMessage = `Olá! Meu nome é ${formData.name}.%0A%0AEmail: ${formData.email}%0ATelefone: ${formData.phone}%0A%0AMensagem: ${formData.message}`
-    window.open(`https://wa.me/5571999999999?text=${whatsappMessage}`, '_blank')
+    const emailSubject = `Nova mensagem de ${formData.name} - Site Paula Aranchipe`
+    const emailBody = `Nome: ${formData.name}%0A%0AEmail: ${formData.email}%0ATelefone: ${formData.phone}%0A%0AMensagem: ${formData.message}`
+    window.open(`mailto:paula.aranchipe@hotmail.com?subject=${emailSubject}&body=${emailBody}`, '_blank')
   }
 
   const contactInfo = [
     {
       icon: <FaWhatsapp />,
       title: "WhatsApp",
-      value: "(71) 99999-9999",
-      link: "https://wa.me/5571999999999"
+      value: "(71) 98136-6264",
+      link: "https://wa.me/5571981366264"
     },
     {
       icon: <FaEnvelope />,
       title: "E-mail",
-      value: "contato@paulaaranchipe.com.br",
-      link: "mailto:contato@paulaaranchipe.com.br"
+      value: "paula.aranchipe@hotmail.com",
+      link: "mailto:paula.aranchipe@hotmail.com"
     },
     {
       icon: <FaMapMarkerAlt />,
@@ -128,7 +129,7 @@ export default function Contact() {
               </div>
 
               <button type="submit" className={styles.submitBtn}>
-                <FaWhatsapp /> Enviar via WhatsApp
+                <FaEnvelope /> Enviar via Email
               </button>
             </form>
           </motion.div>
@@ -174,7 +175,7 @@ export default function Contact() {
                   <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                     <FaInstagram />
                   </a>
-                  <a href="https://wa.me/5571999999999" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/5571981366264" target="_blank" rel="noopener noreferrer">
                     <FaWhatsapp />
                   </a>
                 </div>

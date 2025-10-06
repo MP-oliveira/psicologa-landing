@@ -6,7 +6,7 @@ import styles from '../styles/WhatsAppButton.module.css'
 
 export default function WhatsAppButton() {
   const handleClick = () => {
-    window.open('https://wa.me/5571999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta.', '_blank')
+    window.open('https://wa.me/5571981366264?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta.', '_blank')
   }
 
   return (
