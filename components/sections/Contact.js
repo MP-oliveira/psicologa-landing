@@ -17,6 +17,8 @@ export default function Contact() {
     message: ''
   })
 
+  const [submitted, setSubmitted] = useState(false)
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -29,6 +31,32 @@ export default function Contact() {
     const emailSubject = `Nova mensagem de ${formData.name} - Site Paula Aranchipe`
     const emailBody = `Nome: ${formData.name}%0A%0AEmail: ${formData.email}%0ATelefone: ${formData.phone}%0A%0AMensagem: ${formData.message}`
     window.open(`mailto:paula.aranchipe@hotmail.com?subject=${emailSubject}&body=${emailBody}`, '_blank')
+    
+    // Limpa o formulário e mostra mensagem de confirmação
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      message: ''
+    })
+    setSubmitted(true)
+    setTimeout(() => setSubmitted(false), 5000)
+  }
+
+  const handleWhatsAppSubmit = (e) => {
+    e.preventDefault()
+    const message = `Olá! Meu nome é ${formData.name}.%0A%0AEmail: ${formData.email}%0ATelefone: ${formData.phone}%0A%0AMensagem: ${formData.message}`
+    window.open(`https://wa.me/5571981366264?text=${message}`, '_blank')
+    
+    // Limpa o formulário
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      message: ''
+    })
+    setSubmitted(true)
+    setTimeout(() => setSubmitted(false), 5000)
   }
 
   const contactInfo = [
@@ -128,9 +156,20 @@ export default function Contact() {
                 ></textarea>
               </div>
 
-              <button type="submit" className={styles.submitBtn}>
-                <FaEnvelope /> Enviar via Email
-              </button>
+              {submitted && (
+                <div className={styles.successMessage}>
+                  ✓ Formulário preparado! Complete o envio no aplicativo aberto.
+                </div>
+              )}
+
+              <div className={styles.buttonGroup}>
+                <button type="submit" className={styles.submitBtn}>
+                  <FaEnvelope /> Enviar via Email
+                </button>
+                <button type="button" onClick={handleWhatsAppSubmit} className={styles.whatsappBtn}>
+                  <FaWhatsapp /> Enviar via WhatsApp
+                </button>
+              </div>
             </form>
           </motion.div>
 

@@ -89,9 +89,37 @@
   min-height: 120px;
 }
 
-.submitBtn {
+.successMessage {
+  background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: 500;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.submitBtn,
+.whatsappBtn {
+  flex: 1;
   padding: 1.2rem 2rem;
-  background: var(--gradient);
   color: white;
   border: none;
   border-radius: 50px;
@@ -102,13 +130,27 @@
   justify-content: center;
   gap: 10px;
   transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.submitBtn {
+  background: var(--gradient);
   box-shadow: 0 10px 30px rgba(74, 124, 126, 0.3);
-  margin-top: 1rem;
 }
 
 .submitBtn:hover {
   transform: translateY(-3px);
   box-shadow: 0 15px 40px rgba(74, 124, 126, 0.4);
+}
+
+.whatsappBtn {
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
+}
+
+.whatsappBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4);
 }
 
 .infoSection {
@@ -265,6 +307,16 @@
     width: 45px;
     height: 45px;
     font-size: 1.3rem;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+  }
+
+  .submitBtn,
+  .whatsappBtn {
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
   }
 }
 
