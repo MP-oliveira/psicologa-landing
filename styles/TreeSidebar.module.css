@@ -110,9 +110,9 @@
 /* Ajustes específicos para mobile */
 @media (max-width: 768px) {
   .sidebar {
-    width: 100vw;
-    padding-right: 0;
-    transform: translateX(-100vw);
+    width: 100vw !important;
+    padding-right: 0 !important;
+    transform: translateX(-100vw) !important;
     box-shadow: none !important;
   }
   
@@ -132,5 +132,11 @@
     margin-top: -230px;
     margin-right: auto;
     margin-left: 0;
+  }
+  
+  /* Força remoção completa do box-shadow no mobile */
+  .sidebar,
+  .sidebar * {
+    box-shadow: none !important;
   }
 }
