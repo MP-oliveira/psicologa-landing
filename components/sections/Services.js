@@ -37,7 +37,7 @@ export default function Services() {
     "Atendimento humanizado e personalizado",
     "Ambiente seguro e acolhedor",
     "Sigilo profissional garantido",
-    "Horários flexíveis",
+    "Horários e valores flexíveis",
     "Modalidade presencial e online",
     "Abordagem baseada em evidências científicas"
   ]

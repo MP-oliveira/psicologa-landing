@@ -15,7 +15,7 @@ export default function About() {
     {
       icon: <FaBrain />,
       title: "Terapia Cognitivo-Comportamental (TCC)",
-      description: "Abordagem focada em identificar e modificar padrões de pensamento e comportamento que causam sofrimento emocional."
+      description: "Abordagem baseada em evidências que busca modificar pensamentos e comportamentos disfuncionais."
     },
     {
       icon: <FaHandHoldingHeart />,

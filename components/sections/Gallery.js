@@ -36,7 +36,7 @@ export default function Gallery() {
             <div className={styles.imageWrapper}>
               <div className={styles.imagePlaceholder}>
                 <Image 
-                  src="/images/paula-galeria-1.jpg" 
+                  src="/images/paula-galeria-4.jpeg" 
                   alt="Paula Aranchipe - Atendimento Acolhedor" 
                   fill 
                 />
@@ -53,7 +53,7 @@ export default function Gallery() {
             <div className={styles.imageWrapper}>
               <div className={styles.imagePlaceholder}>
                 <Image 
-                  src="/images/paula-galeria-2.jpg" 
+                  src="/images/paula-galeria-5.jpeg" 
                   alt="Paula Aranchipe - Espaço Profissional" 
                   fill 
                 />
