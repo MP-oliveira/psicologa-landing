@@ -54,6 +54,7 @@ export default function TreeSidebar() {
                 duration: 0.3 
               }}
               whileHover={{ scale: 1.1 }}
+              onClick={() => setIsOpen(false)}
             >
               {item.name}
             </motion.a>
