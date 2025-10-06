@@ -14,8 +14,8 @@ export default function Footer() {
               <Image
                 src="/images/logoImg.png"
                 alt="Logo Paula Aranchipe"
-                width={60}
-                height={60}
+                width={120}
+                height={120}
                 style={{ objectFit: 'contain' }}
               />
               <Image

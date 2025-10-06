@@ -39,6 +39,8 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
 }
 
 .crp {
