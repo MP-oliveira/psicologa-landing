@@ -107,15 +107,30 @@
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* Responsive */
+/* Ajustes específicos para mobile */
 @media (max-width: 768px) {
   .sidebar {
-    width: 350px;
-    padding-right: 30px;
+    width: 100vw;
+    padding-right: 0;
+    transform: translateX(-100vw);
+    box-shadow: none;
   }
   
   .menuItem {
     font-size: 12px;
     padding: 6px 10px;
+  }
+  
+  /* Ajuste da árvore no mobile - sobe 230px */
+  .treeContainer {
+    padding: 20px 20px 40px 20px;
+    justify-content: flex-start;
+  }
+  
+  /* Ajuste da árvore para ficar mais à esquerda no mobile */
+  .treeContainer img {
+    margin-top: -230px;
+    margin-right: auto;
+    margin-left: 0;
   }
 }

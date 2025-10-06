@@ -6,14 +6,14 @@ import Image from 'next/image'
 import styles from '../styles/TreeSidebar.module.css'
 
 export default function TreeSidebar() {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
 
   const menuItems = [
-    { name: 'Início', href: '#inicio', position: { x: 280, y: 150 } },     // Fora da árvore, lado direito
-    { name: 'Sobre', href: '#sobre', position: { x: 280, y: 210 } },      // Fora da árvore, lado direito
-    { name: 'Serviços', href: '#servicos', position: { x: 280, y: 270 } }, // Fora da árvore, lado direito
-    { name: 'Galeria', href: '#galeria', position: { x: 280, y: 330 } },  // Fora da árvore, lado direito
-    { name: 'Contato', href: '#contato', position: { x: 280, y: 390 } }   // Fora da árvore, lado direito
+    { name: 'Início', href: '#inicio', position: { x: 280, y: 180 } },     // Subido 70px
+    { name: 'Sobre', href: '#sobre', position: { x: 280, y: 240 } },      // Subido 70px
+    { name: 'Serviços', href: '#servicos', position: { x: 280, y: 300 } }, // Subido 70px
+    { name: 'Galeria', href: '#galeria', position: { x: 280, y: 360 } },  // Subido 70px
+    { name: 'Contato', href: '#contato', position: { x: 280, y: 420 } }   // Subido 70px
   ]
 
   return (
