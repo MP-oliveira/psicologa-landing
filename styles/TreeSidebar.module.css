@@ -123,6 +123,11 @@
     transform: translateX(0) !important;
   }
   
+  /* Transição suave para o sidebar no mobile */
+  .sidebar {
+    transition: transform 0.5s ease-in-out !important;
+  }
+  
   .menuItem {
     font-size: 12px;
     padding: 6px 10px;
