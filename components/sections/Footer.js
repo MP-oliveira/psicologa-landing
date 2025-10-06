@@ -1,6 +1,7 @@
 'use client'
 
 import { FaHeart } from 'react-icons/fa'
+import Image from 'next/image'
 import styles from '../../styles/Footer.module.css'
 
 export default function Footer() {
@@ -9,11 +10,25 @@ export default function Footer() {
       <div className="container">
         <div className={styles.footerContent}>
           <div className={styles.logoSection}>
-            <div className={styles.logoCircle}>
-              <span>PA</span>
+            <div className={styles.logoContainer}>
+              <Image
+                src="/images/logoImg.png"
+                alt="Logo Paula Aranchipe"
+                width={60}
+                height={60}
+                style={{ objectFit: 'contain' }}
+              />
             </div>
-            <p className={styles.logoText}>Paula Aranchipe</p>
-            <p className={styles.crp}>Psicóloga | CRP-03/33885</p>
+            <div className={styles.logoTextContainer}>
+              <Image
+                src="/images/logoTexto.png"
+                alt="Paula Aranchipe - Psicóloga"
+                width={200}
+                height={50}
+                style={{ objectFit: 'contain' }}
+              />
+              <p className={styles.crp}>Psicóloga | CRP-03/33885</p>
+            </div>
           </div>
 
           <div className={styles.linksSection}>
@@ -38,7 +53,7 @@ export default function Footer() {
 
         <div className={styles.footerBottom}>
           <p>
-            © {new Date().getFullYear()} Paula Aranchipe. Todos os direitos reservados.
+            © {new Date().getFullYear()} Verzza Marketing. Todos os direitos reservados.
           </p>
           <p className={styles.madeWith}>
             Feito com <FaHeart className={styles.heart} /> para cuidar de você
