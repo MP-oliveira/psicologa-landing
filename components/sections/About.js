@@ -70,14 +70,17 @@ export default function About() {
             transition={{ delay: 0.4, duration: 0.8 }}
           >
             <p className={styles.mainText}>
-              Olá! Sou <strong>Paula Aranchipe</strong>, psicóloga dedicada a transformar vidas através 
+              Olá! Sou <strong>Paula Aranchipe</strong>, psicóloga pós Graduanda em TCC - PUC/PR, dedicada a transformar vidas através 
               de um atendimento humanizado e baseado em evidências científicas. Acredito que cada pessoa 
               é única e merece um cuidado personalizado para alcançar seu bem-estar emocional.
             </p>
             <p className={styles.secondaryText}>
-              Com experiência em diferentes áreas da psicologia clínica, meu objetivo é proporcionar 
-              um espaço seguro e acolhedor onde você possa se sentir confortável para explorar suas 
-              emoções, superar desafios e desenvolver todo o seu potencial.
+              Com experiência em diferentes áreas da psicologia clínica — incluindo transtornos de 
+              ansiedade, depressão, psicopatologia e uso abusivo de substâncias psicoativas, temas com os 
+              quais possuo forte vínculo pessoal e profissional — dedico-me ao atendimento de adolescentes, 
+              jovens e adultos. Meu trabalho é sempre guiado pelo acolhimento, compreensão e 
+              construção de práticas que auxiliem no enfrentamento das dificuldades do dia a dia, promovendo 
+              o bem-estar e favorecendo o processo de autoconhecimento do paciente.
             </p>
           </motion.div>
         </div>
