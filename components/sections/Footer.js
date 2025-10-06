@@ -18,8 +18,6 @@ export default function Footer() {
                 height={60}
                 style={{ objectFit: 'contain' }}
               />
-            </div>
-            <div className={styles.logoTextContainer}>
               <Image
                 src="/images/logoTexto.png"
                 alt="Paula Aranchipe - Psicóloga"
@@ -27,7 +25,6 @@ export default function Footer() {
                 height={50}
                 style={{ objectFit: 'contain' }}
               />
-              <p className={styles.crp}>Psicóloga | CRP-03/33885</p>
             </div>
           </div>
 
