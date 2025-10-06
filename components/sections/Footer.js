@@ -21,8 +21,8 @@ export default function Footer() {
               <Image
                 src="/images/logoTexto.png"
                 alt="Paula Aranchipe - Psicóloga"
-                width={200}
-                height={50}
+                width={240}
+                height={60}
                 style={{ objectFit: 'contain' }}
               />
             </div>
